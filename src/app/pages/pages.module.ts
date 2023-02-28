@@ -1,3 +1,6 @@
+import { FooterComponent } from './../layouts/footer/footer.component';
+import { SidebarComponent } from './../layouts/sidebar/sidebar.component';
+import { HeaderComponent } from './../layouts/header/header.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,7 +10,10 @@ import { PagesComponent } from './pages.component';
 
 @NgModule({
   declarations: [
-    PagesComponent
+    PagesComponent,
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
