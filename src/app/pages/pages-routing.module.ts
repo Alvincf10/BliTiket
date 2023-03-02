@@ -21,6 +21,10 @@ const routes: Routes = [
       {
         path:'dashboard',
         component:DashboardComponent
+      },
+      {
+        path:'master-data',
+        loadChildren:() => import('../pages/master-data/master-data.module').then((m)=> m.MasterDataModule)
       }
     ]
   }

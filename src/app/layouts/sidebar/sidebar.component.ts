@@ -1,3 +1,4 @@
+import { NavigationModel } from './../../@core/models/navigation.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
+  navigation = new NavigationModel();
   constructor() { }
 
   ngOnInit(): void {
